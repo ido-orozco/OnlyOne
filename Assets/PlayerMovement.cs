@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
+    public float leftSpeedFactor;
     public Rigidbody2D rb;
     private Vector2 moveDirection;
    
@@ -25,11 +27,21 @@ public class PlayerMovement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        moveDirection = new Vector2(moveX, moveY).normalized;
+        moveDirection = new Vector2(moveX, moveY);
+
+
     }
     void Move()
     {
-        rb.velocity = new Vector2(moveDirection.x * speed, moveDirection.y * speed);
+        if (moveDirection.x < 0)
+        {
+            rb.velocity = new Vector2(moveDirection.x * speed * leftSpeedFactor, moveDirection.y * speed);
+
+        }
+        else
+        {
+            rb.velocity = new Vector2(moveDirection.x * speed, moveDirection.y * speed);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
