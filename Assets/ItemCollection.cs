@@ -17,7 +17,7 @@ public class ItemCollection : MonoBehaviour
     void Update()
     {
         GameObject otherPlayer = GameObject.Find("PlayaTwo");
-        if (ItemOne= true)
+        if (ItemOne)
         {
             if (Input.GetKey(KeyCode.L))
             {
@@ -27,7 +27,7 @@ public class ItemCollection : MonoBehaviour
             }
             else
             {
-                ItemOne = false;
+
                 Debug.Log("else");
             }
         }

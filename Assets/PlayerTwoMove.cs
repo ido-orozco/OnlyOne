@@ -22,7 +22,7 @@ public class PlayerTwoMove : MonoBehaviour
     }
     public void testfn()
     {
-        speed = speed * 1.001f;
+        speed = speed * .9f;
     }
     void ProcessInputs()
     {
