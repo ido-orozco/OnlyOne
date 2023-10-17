@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayerOneConstantMovement : MonoBehaviour
 {
     public float speed;
-    private float cameraSpeed = 5;
+    public float cameraSpeed;
     public Rigidbody2D rb;
     private Vector2 moveDirection;
    
