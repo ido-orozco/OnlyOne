@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerTwoMove : MonoBehaviour
+public class PlayerTwoConstantMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
     public float speed;
-    public float leftSpeedFactor;
+    private float cameraSpeed = 5;
     public Rigidbody2D rb;
     private Vector2 moveDirection;
 
-    // Update is called once per frame
     void Update()
     {
         ProcessInputs();
@@ -20,13 +18,14 @@ public class PlayerTwoMove : MonoBehaviour
     {
         Move();
     }
+
     public void testfn()
     {
         speed = speed * .9f;
     }
+
     void ProcessInputs()
     {
-        float moveX=0;
         float moveY=0;
         
         if (Input.GetKey(KeyCode.W))
@@ -38,29 +37,16 @@ public class PlayerTwoMove : MonoBehaviour
         {
             moveY = -1;
         }
-        if (Input.GetKey(KeyCode.A))
-        {
-            moveX = -1;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            moveX = 1;
-        }
-        moveDirection = new Vector2(moveX, moveY);
+
+        moveDirection = new Vector2(0, moveY);
 
 
     }
     void Move()
     {
-        if (moveDirection.x < 0)
-        {
-            rb.velocity = new Vector2(moveDirection.x * speed * leftSpeedFactor, moveDirection.y * speed);
 
-        }
-        else
-        {
-            rb.velocity = new Vector2(moveDirection.x * speed, moveDirection.y * speed);
-        }
+        rb.velocity = new Vector2(cameraSpeed, moveDirection.y * speed);
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

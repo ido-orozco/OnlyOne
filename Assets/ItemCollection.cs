@@ -24,7 +24,7 @@ public class ItemCollection : MonoBehaviour
             if (Input.GetKey(KeyCode.L))
             {
                 Debug.Log("speedup");
-                otherPlayer.GetComponent<PlayerTwoMove>().testfn();
+                otherPlayer.GetComponent<PlayerTwoMovement>().testfn();
                 ItemOne = false;
                 SpawnProjectileOne = true;
             }
