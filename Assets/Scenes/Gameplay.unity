@@ -1368,6 +1368,7 @@ GameObject:
   - component: {fileID: 179422609}
   - component: {fileID: 179422606}
   - component: {fileID: 179422612}
+  - component: {fileID: 179422613}
   m_Layer: 0
   m_Name: PlayaTwo
   m_TagString: Untagged
@@ -3019,9 +3020,9 @@ GameObject:
   - component: {fileID: 513941441}
   - component: {fileID: 513941445}
   - component: {fileID: 513941446}
+  - component: {fileID: 513941449}
   - component: {fileID: 513941447}
   - component: {fileID: 513941448}
-  - component: {fileID: 513941449}
   m_Layer: 0
   m_Name: Playa
   m_TagString: Untagged
