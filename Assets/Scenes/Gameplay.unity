@@ -1642,11 +1642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalScale.x
-<<<<<<< HEAD
-      value: 2.5
-=======
       value: 2.44131
->>>>>>> a778c147e1453567e2699b238f18632267dd2a27
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalScale.y
@@ -1658,11 +1654,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD
       value: 5
-=======
       value: 4.5998
->>>>>>> a778c147e1453567e2699b238f18632267dd2a27
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1698,11 +1691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7039680996224802497, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_Name
-<<<<<<< HEAD
-      value: Top Wall
-=======
       value: Top Border
->>>>>>> a778c147e1453567e2699b238f18632267dd2a27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1811,11 +1800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalScale.x
-<<<<<<< HEAD
-      value: 2.5
-=======
       value: 2.6731622
->>>>>>> a778c147e1453567e2699b238f18632267dd2a27
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalScale.y
@@ -1827,11 +1812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD
-      value: -5
-=======
       value: -4.5262
->>>>>>> a778c147e1453567e2699b238f18632267dd2a27
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1867,7 +1848,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7039680996224802497, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_Name
-<<<<<<< HEAD
       value: Bottom Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1946,11 +1926,6 @@ PrefabInstance:
     - target: {fileID: 7039680996224802497, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_IsActive
       value: 1
-=======
-      value: Bottom Border
->>>>>>> a778c147e1453567e2699b238f18632267dd2a27
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
