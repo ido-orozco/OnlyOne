@@ -6,46 +6,43 @@ using UnityEngine.SceneManagement;
 
 public class ItemCollection : MonoBehaviour
 {
-    // Start is called before the first frame update
-    Boolean ItemOne;
-    public Boolean SpawnProjectileOne;
+
+    Boolean playerHasItemOne;
     void Start()
     {
-        ItemOne = false;
-        SpawnProjectileOne = false;
+        playerHasItemOne = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         GameObject otherPlayer = GameObject.Find("PlayaTwo");
-        if (ItemOne)
+        
+
+        if (playerHasItemOne && Input.GetKey(KeyCode.L))
         {
-            if (Input.GetKey(KeyCode.L))
-            {
-                
-                otherPlayer.GetComponent<PlayerTwoMovement>().testfn();
-                ItemOne = false;
-                SpawnProjectileOne = true;
-            }
-            else
-            {
-                
-                
-            }
+            // Shoot bullet
+            this.GetComponent<ProjectileOneMove>().shootProjectile();
+
+            // Slow down player
+            otherPlayer.GetComponent<PlayerTwoMovement>().testfn();
+
+            // Remove ability
+            playerHasItemOne = false;
+            
         }
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-
+        // When player collects the item, 
         if (collision.gameObject.name == "ItemOne")
         {
-            
-            ItemOne = true;
+            // collect it
+            playerHasItemOne = true;
+
+            // make it disappear
             GameObject Triangle = GameObject.Find("ItemOne");
             Triangle.GetComponent<SpriteRenderer>().enabled = false;
-
         }
-        //Playa.gameObject.SetActive(false);
     }
 }
