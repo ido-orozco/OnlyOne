@@ -8,26 +8,29 @@ public class ItemCollection : MonoBehaviour
 {
     // Start is called before the first frame update
     Boolean ItemOne;
+    public Boolean SpawnProjectileOne;
     void Start()
     {
         ItemOne = false;
+        SpawnProjectileOne = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         GameObject otherPlayer = GameObject.Find("PlayaTwo");
-        if (ItemOne= true)
+        if (ItemOne)
         {
             if (Input.GetKey(KeyCode.L))
             {
                 Debug.Log("speedup");
                 otherPlayer.GetComponent<PlayerTwoMove>().testfn();
                 ItemOne = false;
+                SpawnProjectileOne = true;
             }
             else
             {
-                ItemOne = false;
+
                 Debug.Log("else");
             }
         }
