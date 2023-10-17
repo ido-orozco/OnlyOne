@@ -23,15 +23,15 @@ public class ItemCollection : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.L))
             {
-                Debug.Log("speedup");
+                
                 otherPlayer.GetComponent<PlayerTwoMovement>().testfn();
                 ItemOne = false;
                 SpawnProjectileOne = true;
             }
             else
             {
-
-                Debug.Log("else");
+                
+                
             }
         }
     }
@@ -40,7 +40,7 @@ public class ItemCollection : MonoBehaviour
 
         if (collision.gameObject.name == "ItemOne")
         {
-            Debug.Log("Collected Item 1");
+            
             ItemOne = true;
             GameObject Triangle = GameObject.Find("ItemOne");
             Triangle.GetComponent<SpriteRenderer>().enabled = false;
