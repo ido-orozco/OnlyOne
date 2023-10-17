@@ -33,6 +33,7 @@ public class ProjectileOneMove : MonoBehaviour
             Debug.Log(CloneProjectile);
             Vector2 direction = (OtherPlayerTransform.position - transform.position).normalized;
             Vector2 movement = direction * ProjectileSpeed*Time.deltaTime;
+            CloneProjectile.GetComponent<SpriteRenderer>().enabled = false;
             CloneProjectile.GetComponent<Transform>().Translate(movement);
             SpawnProjectile = false;
             HasProjectileSpawnedYet= true;
