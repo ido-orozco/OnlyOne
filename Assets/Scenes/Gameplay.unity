@@ -1110,7 +1110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.3255
+      value: 2.44131
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalScale.y
@@ -1122,7 +1122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.6577
+      value: 4.5998
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1158,7 +1158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7039680996224802497, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_Name
-      value: Wall (6)
+      value: Top Border
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1267,7 +1267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.3255
+      value: 2.6731622
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalScale.y
@@ -1279,7 +1279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.7
+      value: -4.5262
       objectReference: {fileID: 0}
     - target: {fileID: 6817348262667735143, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1315,7 +1315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7039680996224802497, guid: b058e2e57425c754f9222e84464bbe17, type: 3}
       propertyPath: m_Name
-      value: Wall (7)
+      value: Bottom Border
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
