@@ -3,51 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerTwoConstantMovement : MonoBehaviour
+
+public class PlayerOne3WayMovement : MonoBehaviour
 {
     public float speed;
-    public float cameraSpeed;
+    public float brakeFactor;
     public Rigidbody2D rb;
     private Vector2 moveDirection;
+   
 
+    // Update is called once per frame
     void Update()
     {
-        ProcessInputs();
+        ProcessInputs(); 
+        
     }
     void FixedUpdate()
     {
-        Move();
+        // Player Movement:
+        rb.velocity = new Vector2(moveDirection.x * speed, moveDirection.y * speed);
     }
-
-    public void testfn()
-    {
-        speed = speed * .9f;
-    }
-
     void ProcessInputs()
     {
-        float moveY=0;
-        
-        if (Input.GetKey(KeyCode.W))
-        {
-            Debug.Log("forward");
-            moveY = 1;
+        float moveY = Input.GetAxisRaw("Vertical");
+        float moveX = Input.GetAxisRaw("Horizontal");
+        if (moveX == -1) {
+            moveX = -1*brakeFactor;
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            moveY = -1;
+        else {
+            moveX = 1;
         }
-
-        moveDirection = new Vector2(0, moveY);
-
-
+        moveDirection = new Vector2(moveX, moveY);
     }
-    void Move()
-    {
 
-        rb.velocity = new Vector2(cameraSpeed, moveDirection.y * speed);
-        
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -57,6 +45,5 @@ public class PlayerTwoConstantMovement : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
             SceneManager.LoadScene("Death");
         }
-        //Playa.gameObject.SetActive(false);
     }
 }
