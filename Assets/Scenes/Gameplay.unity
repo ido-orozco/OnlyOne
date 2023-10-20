@@ -1369,7 +1369,7 @@ GameObject:
   - component: {fileID: 179422606}
   - component: {fileID: 179422612}
   - component: {fileID: 179422614}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayaTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1527,7 +1527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dbb4bed46eb9ce4fa79191e2a1c5e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 3.2
   leftSpeedFactor: 0.005
   rb: {fileID: 179422606}
 --- !u!114 &179422614
@@ -1542,7 +1542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba69cea2731a41545ae120eb6280e1a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 3.2
   brakeFactor: 0.35
   rb: {fileID: 179422606}
 --- !u!1001 &181790958
@@ -3025,7 +3025,7 @@ GameObject:
   - component: {fileID: 513941447}
   - component: {fileID: 513941448}
   - component: {fileID: 513941450}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Playa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3183,7 +3183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4fc07c2ed4e6f4ebb10785feaa1979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 3.2
   leftSpeedFactor: 0.005
   rb: {fileID: 513941445}
 --- !u!114 &513941447
@@ -3240,7 +3240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c3428c1e6e3c14a945c6ea4f0d9965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 3.2
   brakeFactor: 0.35
   rb: {fileID: 513941445}
 --- !u!1001 &537169765
@@ -3869,7 +3869,7 @@ Transform:
   m_GameObject: {fileID: 669025597}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.71, y: 0, z: -10}
+  m_LocalPosition: {x: -16.32, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4747,9 +4747,9 @@ GameObject:
   - component: {fileID: 825479092}
   - component: {fileID: 825479091}
   - component: {fileID: 825479094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ItemOne
-  m_TagString: Untagged
+  m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5676,7 +5676,7 @@ GameObject:
   - component: {fileID: 950382303}
   - component: {fileID: 950382304}
   - component: {fileID: 950382305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Monsta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5744,7 +5744,7 @@ Transform:
   m_GameObject: {fileID: 950382299}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.24, y: 0.03, z: -0.02}
+  m_LocalPosition: {x: -23.31, y: -0.1, z: -0.02}
   m_LocalScale: {x: 1, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
